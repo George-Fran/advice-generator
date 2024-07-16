@@ -1,0 +1,104 @@
+:root {
+    /* Prymary colors*/
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 60%);
+
+    /* Neutral colors */
+    --grayishBlue: hsl(217, 19%, 38%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --darkBlue: hsl(218, 23%, 16%);
+    --fuenteManrope: "Manrope", sans-serif;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    background: var(--darkBlue);
+}
+
+.citas {
+    max-width: min(90%, 62rem);
+    margin: 0 auto;
+    background: var(--darkGrayishBlue);
+    padding: 4rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    position: relative;
+    margin-top: 27vh;
+}
+
+.citas__id {
+    font-size: 1.6rem;
+    color: var(--neonGreen);
+    letter-spacing: .5rem;
+    margin-top: 2rem;
+}
+
+.citas__contenido {
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--lightCyan);
+    margin-bottom: 5rem;
+}
+
+.citas__divisor {
+    margin-bottom: 5rem;
+}
+
+.citas__divisor .pc {
+    width: 100%;
+}
+
+.citas__divisor .mobile {
+    display: none;
+}
+
+.citas__generar {
+    background: var(--neonGreen);
+    padding: 2rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 45.5%;
+    bottom: -3rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .citas{
+        margin-top: 15rem;
+    }
+    .citas__divisor .pc {
+        display: none;
+    }
+
+    .citas__divisor .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .citas__generar {
+        left: 42.1%;
+    }
+}
+.footer{
+    margin-top: 10rem;
+    text-align: center;
+    color: var(--lightCyan);
+}
+.footer a{
+    text-decoration: none;
+    color: var(--neonGreen);
+}
